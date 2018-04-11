@@ -7,20 +7,26 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
+    
+    //MARK: - Constants
+    let URL_TMDB = "https://api.themoviedb.org/3/movie/popular?api_key=93aea0c77bc168d8bbce3918cefefa45&language=en-US&page=1"
 
+    //MARK: - Overrides methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //My first real commit
+        alamofireRequest()
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func alamofireRequest() {
+        
+        let request = Alamofire.request(URL_TMDB).responseJSON { (response) in
+            debugPrint(response)
+        }
     }
-
 
 }
 

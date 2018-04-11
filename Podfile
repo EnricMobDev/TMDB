@@ -1,21 +1,17 @@
-# Uncomment the next line to define a global platform for your project
- platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
 
-target 'TMDAplication' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+  target 'TMDAplication' do
+    pod 'Alamofire'
+  end
 
-  # Pods for TMDAplication
-	pod 'Alamofire', '~> 4.2.0'
-	end
   target 'TMDAplicationTests' do
-    inherit! :search_paths
-    # Pods for testing
-  
+    inherit! :search_paths 
+  end
 
   target 'TMDAplicationUITests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
-end
+
