@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C608B13208B36C6005236BD /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C608B12208B36C6005236BD /* FilmTableViewCell.swift */; };
 		0C699DD9207CEF9400A5299E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C699DD8207CEF9400A5299E /* AppDelegate.swift */; };
 		0C699DDB207CEF9400A5299E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C699DDA207CEF9400A5299E /* ViewController.swift */; };
 		0C699DDE207CEF9400A5299E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C699DDC207CEF9400A5299E /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		034A8A238F07C0EB91600F6E /* Pods_TMDAplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDAplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		074A1A95EE711A04AE062F9F /* Pods-TMDAplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDAplicationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMDAplicationUITests/Pods-TMDAplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0C608B12208B36C6005236BD /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
 		0C699DD5207CEF9400A5299E /* TMDAplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDAplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C699DD8207CEF9400A5299E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C699DDA207CEF9400A5299E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				0C699DD8207CEF9400A5299E /* AppDelegate.swift */,
 				0C699DDA207CEF9400A5299E /* ViewController.swift */,
+				0C608B12208B36C6005236BD /* FilmTableViewCell.swift */,
 				0C699DDC207CEF9400A5299E /* Main.storyboard */,
 				0C699DE2207CEF9400A5299E /* Assets.xcassets */,
 				0C699DE4207CEF9400A5299E /* LaunchScreen.storyboard */,
@@ -462,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C699DDB207CEF9400A5299E /* ViewController.swift in Sources */,
+				0C608B13208B36C6005236BD /* FilmTableViewCell.swift in Sources */,
 				0C699DD9207CEF9400A5299E /* AppDelegate.swift in Sources */,
 				0C699DE1207CEF9400A5299E /* TMDAplication.xcdatamodeld in Sources */,
 			);
