@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     //MARK: - Constants
     let CELL_IDENTIFIER = "filmCellIdentifier"
     let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=93aea0c77bc168d8bbce3918cefefa45&language=en-US&page=1")
+    let ESTIMATED_ROW_HEIGHT = 100.0
     
     //MARK: - Variables
     var films = [Films]()
@@ -83,7 +84,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell
+        var cell = UITableViewCell()
         
         cell = tableView.dequeueReusableCell(withIdentifier: CELL_IDENTIFIER, for: indexPath)
         
@@ -94,6 +95,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
         cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = CGFloat(ESTIMATED_ROW_HEIGHT)
+        return tableView.rowHeight
     }
 }
 
